@@ -13,6 +13,10 @@ public class Wallpaper extends Elemento implements Comparable<Wallpaper> {
         this.pals = new ArrayList<>();
     }
 
+    public boolean contienePalabra(String pal) {
+        return this.pals.contains(pal);
+    }
+
     public Usuario getUser() {
         return this.user;
     }

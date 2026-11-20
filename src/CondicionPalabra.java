@@ -6,7 +6,7 @@ public class CondicionPalabra extends Condicion {
     }
 
     public boolean cumple(Wallpaper w) {
-        return w.listarPals().contains(this.palabra);
+        return w.contienePalabra(this.palabra);
     }
 
 }

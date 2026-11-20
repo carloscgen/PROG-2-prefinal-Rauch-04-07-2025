@@ -16,7 +16,8 @@ Enunciado: `Prefinal 2025 - Rauch.pdf` (una página). Tema: wallpapers, usuarios
 - El usuario leyó el requisito de colecciones o carpetas con publicidad. El enunciado exige agregar primero un wallpaper publicitado aunque no cumpla la condición, pero no especifica cómo se elige o identifica ese wallpaper.
 - Se discutió como alternativa de diseño que el agrupador con publicidad reciba y guarde una referencia al wallpaper elegido. El usuario considera forzado ese supuesto. También se explicó que `List.add(0, wallpaper)` lo inserta al principio de un listado ya construido.
 - **Decisión actual del usuario: no implementar el punto de publicidad.** Respetar esa decisión; no darlo por resuelto ni insistir en implementarlo.
-- Quedan por trabajar los wallpapers universales y la colección o carpeta “Minimalismo Patrocinado”. Revisar con el usuario qué parte quiere abordar en la próxima sesión, sin adelantarle una solución completa.
+- `WallpaperUniversal` sobrescribe `contienePalabra(String)` y responde `true` a cualquier palabra sin alterar la lista real ni las demás condiciones. `CondicionPalabra` llama ahora a esa operación polimórfica. Se comprobó una búsqueda por palabra ausente y que una condición de año no coincidente lo excluye.
+- `MinimalismoPatrocinado` extiende `Colecciones`, recibe un wallpaper patrocinado, lo agrega a cada búsqueda y ordena el resultado. Se comprobó con una búsqueda por año no coincidente. El recorrido de hijos está duplicado respecto de `Colecciones.listar`; puede simplificarse usando `super.listar(c)`. El constructor no garantiza que el wallpaper recibido se titule “Minimal White Background”; esa elección queda a cargo de quien lo construye.
 
 ## Decisiones y ambigüedades
 

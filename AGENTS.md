@@ -46,4 +46,4 @@ Cada examen empieza desde cero: los anteriores sirven para aprender criterios, n
 
 ## Estado de este repositorio
 
-El enunciado de este ejercicio está en `Prefinal 2025 - Rauch.pdf`. `src/docs/PROGRESO.md` registra el estado de este examen. La primera parte ya fue implementada y revisada; `src/App.java` conserva el ejemplo inicial de VS Code. El usuario decidió dejar sin implementar el punto de publicidad y retomar después los demás requisitos de la segunda parte. No reemplaces su trabajo ni adelantes la solución completa sin atender a lo que pida en la conversación.
+El enunciado de este ejercicio está en `Prefinal 2025 - Rauch.pdf`. `src/docs/PROGRESO.md` registra el estado de este examen. La primera parte ya fue implementada y revisada; `src/App.java` conserva el ejemplo inicial de VS Code. El usuario decidió dejar sin implementar el punto de publicidad. `WallpaperUniversal` y `MinimalismoPatrocinado` ya están implementados; ver detalles y límites en `src/docs/PROGRESO.md`. No reemplaces su trabajo ni adelantes la solución completa sin atender a lo que pida en la conversación.
